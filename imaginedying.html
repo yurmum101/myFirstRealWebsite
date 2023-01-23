@@ -15,7 +15,8 @@
   <body>
    <canvas id="canvas" height="800" width="1100">
    </canvas>
-   <script>
+   <script src="ez.js">
+    /*
     function preventBehavior(ffe) {
      ffe.preventDefault(); 
      var touch = ffe.touches[0];
@@ -185,7 +186,7 @@
      /*
      var testRectColliderX = [testRectX - (testRectWidth/2),testRectX - (testRectWidth/2),testRectX - (testRectWidth/2),testRectX,testRectX + (testRectWidth/2),testRectX + (testRectWidth/2),testRectX + (testRectWidth/2),testRectX];
      var testRectColliderY = [testRectY - (testRectWidth/2),testRectY,testRectY + (testRectWidth/2),testRectY + (testRectWidth/2),testRectY + (testRectWidth/2),testRectY,testRectY - (testRectWidth/2),testRectY - (testRectWidth/2)];
-     */
+     
      context.fillStyle = "#12f1fe";
      context.beginPath();
      context.ellipse(1000,700,100,100,0,0,360,false);
@@ -198,7 +199,7 @@
      context.fillText(clientX,100,400);
      context.fillText(clientY,100,500);
      context.fillText(Math.sqrt(playerMovementX**2 + playerMovementY**2),100,600);
-     */
+     
      context.fillText(attackCooldownTimer,100,200);
      context.fillText(mouseDown,100,300);
      context.fillText(mobs[0][1],100,400);
@@ -277,7 +278,7 @@
        }
        /*
        context.fillText(".",testRectColliderX[collisionCounter]+(canvas.width/2)-playerX,testRectColliderY[collisionCounter]+(canvas.height/2)-playerY);
-       */
+       
       }
       if (collisiona == 0){
        playerX += playerMovementX;
@@ -325,6 +326,7 @@
     }, 1);
     context.fillStyle = "red";
     context.font = "bold 16px Arial";
+    */
    </script>
   </body>
 </html>
